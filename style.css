@@ -1,0 +1,969 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: rgb(216, 216, 216);
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background: #000517;
+}
+.logo img
+{
+    width: 190px;
+    align-items: center;
+    padding-left: 18px;   
+    padding-top: 2px; 
+}
+.menu
+{
+    display: flex;
+}
+.menu ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a
+{
+    padding: 8px 20px;
+    color: rgba(255, 255, 255, 0.76);
+    transition: 100ms linear;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+
+}
+.menu ul li a:hover
+{
+    border-bottom: 2px solid #e99700;
+    color: #fea500;
+}
+
+.btn
+{
+    display: flex;
+    place-items: center;
+    padding: 20px 20px;
+    gap: 10px;
+}
+.btn .in
+{
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(33, 2, 105);
+    color: white; 
+} 
+.btn .in:hover
+{
+    background: rgb(48, 5, 150);
+}
+
+.btn .up
+{
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(139, 139, 139);
+} 
+.btn .up:hover
+{
+    background: rgb(61, 61, 61);
+}
+
+section
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+section .parent
+{
+    width: 90%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Looking
+{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.para
+{
+    font-size: 22px;
+}
+.child2
+{
+    background: linear-gradient(180deg, #fea500 45%, rgb(216, 216, 216));
+    padding-bottom: 30px;
+    border-radius: 70px 70px 0px 0px;
+}
+section .parent .social-media
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+section .parent .social-media img
+{
+    margin: 0px 8px;
+}
+
+
+/* Form Section */
+/* reserve your car starts */
+
+.form
+{
+    width: 100%;
+    margin-top: 20px;
+}
+.reserve-form
+{
+    width: 70%;
+    background-color: rgb(25, 0, 85);
+    color: white;
+    padding: 20px;
+    box-shadow: 5px 10px 10px rgb(65, 65, 65);
+}
+.car-detail
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px; 
+}
+.car-detail img
+{
+    margin-left: 15px;
+}
+.reserve
+{
+    text-transform: uppercase;
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.available
+{
+    font-size: 20px;
+
+}
+.code
+{
+    color: #e99700;
+}
+#advance
+{
+    background-color: transparent;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+}
+#advance:focus
+{
+    outline: none;
+    border-bottom: 1px dotted white;
+}
+input
+{
+    color: white;
+    font-size: 20px;
+
+}
+input::placeholder
+{
+    color: #e99700;
+    font-size: 18px;
+}
+/* reserve your car Ends */
+
+hr
+{
+    background-color: #e99700;
+    color: #e99700;
+    border: 1px solid #e99700;
+    border-color: #e99700;
+}
+
+
+/* Form starts */
+.user-input-data
+{
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+/* Pick Up Starts */
+.pick-up
+{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+.pick-up label
+{
+    padding-bottom: 12px;
+}
+.pick-up input
+{
+    background-color: rgba(128, 128, 128, 0.534);
+    border: 0px;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+}
+.pick-up input:focus
+{
+    outline: none;
+    border: 1px solid #e99700;
+}
+.pick-up input::placeholder
+{
+    color: grey;
+}
+/* Pick Up Ends */
+
+
+
+/* Pick date Starts */
+.pick-date
+{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+.pick-date label
+{
+    padding-bottom: 12px;
+}
+.pick-date input
+{
+    background-color: rgba(128, 128, 128, 0.534);
+    border: 0px;
+    align-items: center;
+    width: 220px;
+    height: auto;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+
+}
+.pick-date input:focus
+{
+    outline: none;
+    border: 1px solid #e99700;
+}
+.pick-date input
+{
+    color: rgb(153, 153, 153);
+}
+.pick-date input:focus
+{
+    color: white;
+}
+/* Pick date Ends */
+
+
+/* Pick Time Starts */
+.pick-time
+{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+.pick-time input
+{
+    background-color: rgba(128, 128, 128, 0.534);
+    border: 0px;
+    align-items: center;
+    width: 220px;
+    height: auto;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+}
+.pick-time input:focus
+{
+    outline: none;
+    border: 1px solid #e99700;
+}
+.pick-time label
+{
+    padding-bottom: 12px;
+}
+.pick-time input
+{
+    color: rgb(153, 153, 153);
+}
+.pick-time input:focus
+{
+    color: white;
+}
+
+/* Form Button */
+.form-btn
+{
+   width: 100%;
+   align-items: center;
+    
+}
+.form-btn button
+{
+   
+    margin-left: 460px;
+    padding: 12px 150px;
+    font-size: 20px;
+    margin-top: -20px;
+    font-weight: 300px;
+    color: white;
+    background: #e99700;
+    border: 0px;
+}
+.form-btn button:hover
+{
+    background: #ffb223;
+
+}
+/* Form section Ends */
+
+.container-fluid
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container-fluid label
+{
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.container-fluid p
+{
+    width: 100%;
+    padding: 30px 50px;
+    margin-bottom: 60px;
+}
+
+
+
+
+/* Car image */
+.car-img
+{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e99700;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+/* Car image Ends*/
+
+
+
+/* Get Our Offer Seciton */
+.center
+{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    background-image: radial-gradient(circle at 50% 50%, transparent, rgba(184, 184, 184, 0.658) 20%);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.make-offer-bold
+{
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    margin-left: 10px;
+}
+/* Get Our Offer Seciton */
+
+
+
+/* Offers Section Starts */
+.offers
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 50px;
+    
+}
+.card1
+{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 12px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.486);
+}
+.card1 img
+{
+    padding-bottom: 7px; 
+    padding-top: 7px;
+}
+.card1 p
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+.headings
+{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Offers Section Ends */
+
+
+
+
+/* Verna Side Profile Starts*/
+.car-import
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Verna Side Profile Ends*/
+
+
+
+
+/* Car interior Starts*/
+.black-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.black-img img
+{
+    width: 100%;
+    height: 750px;
+}
+/* Car interior Ends*/
+
+
+/* What We Do Section Starts*/
+.what-we-do
+{
+    background: rgb(25, 0, 85); /* Main Color */
+    color: white;
+    padding: 20px 30px;
+}
+
+.Service-description h1
+{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.Service-description p
+{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.system-parent
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    gap: 30px;
+
+}
+.system-parent img
+{
+    width: 40px;
+}
+.system-parent .items
+{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 28%;
+    background-color: rgba(128, 128, 128, 0.425);
+    border-radius: 7px;
+}
+/* What We Do Section Ends*/
+
+
+/* Best Service Part Starts*/
+.service-heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin: 20px 0px;
+    justify-content: center;
+    background-image: radial-gradient(circle at 50% 50%, rgb(216, 216, 216), rgb(184, 184, 184) 50%);
+}
+.service-heading .best-services
+{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #fea500;
+    text-shadow: 1px 1px white;
+    border-radius: 8px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.service-heading .car-rental
+{
+    font-size: 40px;
+}
+/* Best Service Part Ends*/
+
+
+
+
+.Car-details
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 60px;
+    
+}
+.Car-details .car-card
+{
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0px 10px 20px rgba(53, 53, 53, 0.534);
+    transition: 100ms all linear;
+}
+.Car-details .car-card:hover
+{
+    transform: scale(1.1);
+}
+.Car-details .car-card .carbg
+{
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding-top: 10px;  
+}
+.Car-details .car-card .ratings
+{
+    padding-top: 10px;  
+
+}
+.Car-details .car-card .center-innova
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Car-details .car-card p
+{
+    padding: 3px 10px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.Car-details .car-card a
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: #e99700;
+    color: white;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.Car-details .car-card a:hover
+{
+background: #ffb223;
+}
+
+
+/*Customer Reviews starts*/
+.reviews
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: radial-gradient(circle at 50% 50%, rgb(216, 216, 216), rgb(184, 184, 184) 50%);
+}
+.reviews h4
+{
+    font-size: 20px;
+}
+.reviews h1
+{
+    font-size: 40px;
+}
+/*Customer Reviews Ends*/
+
+/* Customer Feedback */
+.container-fluid-customer
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/black2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 20px;
+}
+.container-fluid-customer .customer-review
+{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.192);
+    margin: 0px 30px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+}
+.container-fluid-customer .customer-review h2
+{
+    padding-bottom: 10px;
+}
+/* Customer Feedback */
+
+
+
+
+/* Get your dream Section */
+.Get-your-own-dream
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    background-image: linear-gradient(45deg, rgb(26, 6, 71) 50%, rgb(25, 0, 85) 50%), url(img/mlogo2.png);
+    background-repeat: no-repeat;
+    color: rgb(231, 231, 231);
+    padding: 0px 100px;
+    border-top: 2px solid #fea500;
+}
+.Get-your-own-dream .boy
+{
+    width: 50%;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0px 30px;
+    margin-right: 10px;
+}
+.Get-your-own-dream .boy p
+{
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.Get-your-own-dream .boy a
+{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #e99700;
+    color: white;
+}
+.Get-your-own-dream .boy a:hover
+{
+    background: #ffb223;
+}
+/* Get your dream Section Ends*/
+
+
+/* Map Section */
+.map
+{
+    display: flex;
+    justify-content: left;
+    width: 100%; 
+    height: 400px; 
+    border: 0;
+}
+.map iframe
+{
+    width: 50%;
+}
+.map .login
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(48deg, rgb(26, 6, 71) 50%, rgb(25, 0, 85) 50%), url(img/mlogo2.png);
+
+}
+.map .login .contact
+{
+    width: 100%;
+    height: 250px;
+    margin: 0px 40px;
+}
+/* Map Section */
+.contact h1
+{
+    color: white;
+}
+.container-block 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container-block .block .block-one
+{
+    padding: 10px 0px;
+}
+.container-block .block .block-one input
+{
+    padding: 6px 0px;
+    padding-left: 15px;
+    background-color: rgba(128, 128, 128, 0.486);
+    color: white;
+    border: 1px solid transparent;
+    width: 70%;
+    margin-left: 10px;
+}
+.container-block .block .block-one input:focus
+{
+    border: 1px solid #fea500;
+    outline: none;
+}
+.container-block .block .block-one input::placeholder
+{
+    color: rgba(255, 255, 255, 0.432);
+
+}
+.container-block .block  a
+{
+    margin-top: 10px;
+    margin-left: 28px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 20px 0px;
+    height: 30px;
+    align-items: center;
+    background-color: #e99700;
+    color: white;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.container-block .message
+{
+    padding-top: 10px;
+    display: flex;
+}
+.container-block .message img
+{
+    margin-right: 10px;
+}
+.container-block .message input
+{
+    padding-left: 15px;
+    padding-bottom: 100px;
+    background-color: rgba(128, 128, 128, 0.486);
+    color: white;
+    border: 1px solid transparent;
+    height: 130px;
+    width: 100%;
+}
+.container-block .message input:focus
+{
+    border: 1px solid #fea500;
+    outline: none;
+}
+.container-block .message input::placeholder
+{
+    color: rgba(255, 255, 255, 0.432);
+}
+
+
+
+/* Call Us */
+.Call-Us
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.Call-Us hr
+{
+    width: 80%;
+}
+.Call-Us label
+{
+    margin-top: 10px;
+    font-size: 23px;
+}
+.Call-Us h1
+{
+    font-size: 40px;
+}
+.Call-Us a
+{
+    color: #fea500;
+    text-shadow: 1px 3px #9c6705;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+/* footer Seciton Starts */
+.footer
+{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000517;
+}
+.footer .parent
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.footer .parent .child
+{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-top: 0px;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 10px;
+    color: grey;
+    flex-wrap: wrap;
+}
+.footer .parent .child h2
+{
+    padding-bottom: 20px;
+}
+.grand-parent 
+{
+    width: 90%;
+    height: 100px;
+    justify-content: center;
+    color: grey;
+}
+.grand-parent h2
+{
+    padding-bottom: 10px;
+}
+.grand-parent a
+{
+    color: #344069;
+    padding: 0px 10px;
+}
+.footer-line
+{
+    color: grey;
+    background-color: grey;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
